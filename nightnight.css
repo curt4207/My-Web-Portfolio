@@ -140,7 +140,7 @@ body{
 
 /*/////////////////////////////////// NEW CODE SECTION -Only CSS control for HTML Home/ About/ Exp ////////////////////////////////////////// */
 #displayWindow{
-    background-color: #0ff;
+    background:linear-gradient(0.25turn, #0f739d, lawngreen, #f0f);
     position: fixed;
     width: 50vw;
     height:  50vh;
@@ -153,9 +153,12 @@ body{
 }
 
 h1{
-    font-size: 5rem;
-   color:deeppink;
-   padding-left: 5vw;
+   
+    margin-top: 5rem;
+    margin: 5rem 20rem;
+    font-size: 2vw;
+    color: deeppink;
+    padding: .5em;
   
 }
 
@@ -179,12 +182,13 @@ button:hover {
 
 .navBar{
     top: 0rem;
-    width: 80%;
+    width: auto;
     /* color:forestgreen; */
-    background-color:black; 
+    background-color:hsla(10, 5%, 24%, 0.6); 
     float: none;
      position: fixed;
-     margin-left: 0.3rem;
+     margin-left: 1rem;
+    
 }
 .navBar ul{
     color:red;
