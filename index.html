@@ -1,0 +1,172 @@
+<!-- resources used: Online tutorials,   -->
+<!-- Project NightNight- New Web Portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curtis Clayton's Web Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="nightnight.css">
+   
+</head>
+<body>
+    <h1><strong>Welcome To My Portfolio</strong></h1>
+    <header>
+        <div class="navBar">
+            <nav>
+                <ul>
+                   <li><a href="https://github.com/curt4207">Hi I'm Curtis</a></li> 
+                   <li><a href="#aboutMe">About</a></li>
+                   <li><a href="#exp">Experience</a></li>
+                   <li><a href="#skillsList">Skills</a></li>
+                   <li><a href="#projects">Projects</a></li>
+                   <li><a href="#connect">Connect</a></li>
+                   <li><a href="#leaveMessage">Leave a Message</a></li>
+               </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="mainContent">   
+       
+    
+        <div id="aboutMe">
+        <section>
+            <h2><em>About</em></h2>
+            <p><strong><a href="https://github.com/curt4207">Hi I'm Curtis</a></strong>, before the Covid-19 pandemic I delivered beer and wine to grocery stores and wine shops. I have always had back breaking or labor intensive job, 2020 & 2021 have shown me it's time for a career change. I've always been interested in coding and programing, so it seemed like the perfect opportunity when I found free resources to start learning.</p>
+        </section>
+        </div>   
+    
+        <!--wrap in unordered list element-->
+        <div id="exp">
+        <section>
+            <h2><em>Experience</em></h2>
+            <p>
+            <ul>
+             <li>- I was an over the road truck driver for 8+ years.</li>
+             <li>- I've been a correctional officer in two states.</li>
+             <li>- the Odin project still working on it.</li>
+             <li>- Kahn Academy JavaScript/ CSS/ HTML.</li>
+             <li>- Current Student at Code The Dream (started 2021).</li>
+              </ul>
+            </p>
+        </div>    
+    
+           
+        </section>
+        
+        <div id="skillsList">
+        <section id="skills">
+            <h2><em>Skills</em></h2>
+            <ul>
+    
+            </ul>
+        </section>
+        </div>
+    
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+    
+            </ul>
+        </section>
+        
+    
+        
+        <div id="connect">
+        <section>
+           <h2><em>Connect</em></h2>
+            <ul>
+                <li>Email: Curt122181@gmail.com</li>
+                <li><a href="https://github.com/curt4207">GitHub: https://github.com/curt4207</a></li>
+            </ul>
+        </section>
+        </div>
+    
+        <div id="leaveMessage">
+        <section>
+            <form name="leave_message">
+                <h2>Leave a Message</h2>
+    
+                <br><label for="name">Your Name</label>
+                <input type="text" name="name" id="name" required="true"></br>
+    
+                <br><label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required="true"></br>
+    
+                <br><label for="message">leave a Message</label>
+                <textarea name="message" id="message" required="true"></textarea></b>          
+                <br><label for="submit">Submit</label>
+                <button type="submit" name="submit" >Submit</button></br>   
+            </form>
+            <section id="messages">
+                <h2>Messages</h2>
+                <div id="messageList">
+                        <ul>
+            
+                        </ul>
+                </div>    
+            </section> 
+        </section>
+        </div>
+    
+        
+        
+        </div>
+    
+<div class ="scene">
+    <div class="moon">
+        <img src="cloud1.png" class="cloud1" alt="clouds">
+        <img src="cloud2.png" class="cloud2" alt="clouds">
+        <img src="cloud1.png" class="cloud3" alt="clouds">
+        <img src="cloud2.png" class="cloud4"alt="clouds">
+        <img src="cloud1.png" class="cloud5"alt="clouds">
+        <img src="cloud2.png" class="cloud6"alt="clouds">
+    </div>
+    <!--Note: The type attribute identifies the content between the <script> and </script> tags. -->
+    <script type="text/javascript">
+function stars(){
+    let count = 1000;
+    let scene = document.querySelector(".scene");
+    let i = 0;
+    while(i < count){
+        let star = document.createElement("i");
+        let x = Math.random() * 100;//Math.floor(Math.random() * window.innerWidth);
+        let y = Math.random() * 100;//Math.floor(Math.random() * window.innerHeight);
+        let duration = Math.random() * 10;
+        let size = Math.random() * 4;
+        let randomColor = "#" + Math.floor(Math.random() *16777215).toString(16);
+
+        star.style.left = x + "vw";
+        star.style.top = y + "vh";
+        star.style.width = 1 + size + "px";
+        star.style.height = 1 + size + "px";
+        star.style.background = randomColor;
+
+        star.style.animationDuration = 10 + duration + "s";
+        star.style.animationDelay = duration + "s";
+
+        scene.appendChild(star);
+        i++;
+    // window.addEventListener("resize");   
+}
+// console.log(count);
+} 
+
+
+stars();
+    
+    </script>
+
+    <div id="displayWindow">
+        
+    </div>
+    </div>
+    <footer></footer>
+    
+        <script src="index.js"></script>   
+    </body>
+    </section>
+</body>
+</html>
